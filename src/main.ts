@@ -6,7 +6,7 @@ import { VueReCaptcha } from 'vue-recaptcha-v3'
 import Connex from '@vechain/connex'
 
 Vue.use(VueReCaptcha, {
-  siteKey: '6LcJyKobAAAAABWj86grDyNGZwodmy-R0axfQhDb',
+  siteKey: '6LcAvq0bAAAAAAOVD41VIE5cJSsZ3gKJ9TgR862L',
   loaderOptions: {
     useRecaptchaNet: true,
   },
