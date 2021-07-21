@@ -65,7 +65,7 @@
 
             <form v-if="step === status.start.step" @submit.prevent="signCert">
                 <div class="nes-field">
-                    <p>Welcome to the VeChain world, I think you need some tokens to explore the world</p>
+                    <p>Welcome to the VeChain <span class="text is-primary">POA2 Stage.0</span> world, I think you need some tokens to explore the world</p>
                 </div>
                 <div class="nes-field">
                     <button type="submit" class="nes-btn is-primary">Claim Tokens</button>
@@ -235,6 +235,9 @@ body {
     color: rgb(124, 195, 35);
     text-decoration: none;
     font-size: 24px;
+}
+.text.is-primary{
+    color: #209cee;
 }
 @media (min-width: 800px) {
     #app {
