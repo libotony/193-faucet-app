@@ -25,14 +25,14 @@ export default class PageHeader extends Vue {
         if (this.balance == null) {
             return '--'
         }
-        return Math.floor(parseInt(this.balance, 16) / 1e18).toLocaleString()
+        return Math.round(parseInt(this.balance, 16) / 1e18).toLocaleString()
     }
 
     get vtho() {
         if (this.energy == null) {
             return '--'
         }
-        return Math.floor(parseInt(this.energy, 16) / 1e18).toLocaleString()
+        return Math.round(parseInt(this.energy, 16) / 1e18).toLocaleString()
     }
     public async setBalance() {
         const theAccount = await this.account.get()
